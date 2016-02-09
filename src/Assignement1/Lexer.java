@@ -10,8 +10,8 @@ public class Lexer {
 		sc.useDelimiter("");
 		String tokenString = "";
 	    String c = sc.next();
-	    if (c.equals(" ")){
-	    	while (c.equals(" ")){
+	    if (c.equals(" ") || c.equals("\r") || c.equals("\n")){
+	    	while (c.equals(" ") || c.equals("\r") || c.equals("\n")){
 	    		c = sc.next();
 	    	}
 	    }
