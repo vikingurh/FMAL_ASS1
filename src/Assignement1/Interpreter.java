@@ -106,7 +106,7 @@ public class Interpreter {
 	private static boolean valid(String s){
 		for (int i = 0; i < s.length(); i++){
 			if (!Character.isDigit(s.charAt(i))){
-				if (s.charAt(i) != '-'){
+				if (i == 0 && s.charAt(i) != '-'){
 					return false;
 				}
 			}
